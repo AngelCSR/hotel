@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resrva</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1>Haga su resrva</h1>
+    <form action="procesareserva.php" method="get">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" maxlength="100"
+            name="nombre">
+        </p>
+        <p>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" maxlength="100"
+            name="apellidos">
+        </p>
+        <label for="dni">DNI:</label>
+            <input id="dni" type="text" maxlength="10"
+           placeholder="DNI con letra" name="dni">
+    </fieldset>
+    <fieldset>
+        <legend>Datos de su estancia</legend>
+    <p>
+    Habitación:
+</p>
+    <label for="Individual">Individual:</label>
+    <input id="Individual"
+     type="radio" value="1"
+     name="Habitación">
+     <label for="Doble">Doble:</label>
+     <input id="Doble"
+      type="radio" value="2"
+      name="Habitación">
+      <label for="Triple">Triple:</label>
+    <input id="Triple"
+     type="radio" value="3"
+     name="Habitación">
+<p>
+     Número de personas:<select name="numper">
+<option value="1" selected>Una Persona</option>
+<option value="2">Dos Personas</option>
+<option value="3">Tres Personas</option>
+</select>
+</p>
+<p>
+    <input type="checkbox" name="mascota" checked>Llevo mascotas
+</p>
+    <p>
+        Fecha Llegada:<input type="date" name="fecha_lleg">
+    </p>
+    <p>Hora Llegada<input type="time"></p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+</fieldset>
+<p></p>
+<a href="index.html">Volver</a>
+</form>
+</body>
+</html>
